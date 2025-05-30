@@ -13,6 +13,10 @@ import { StudentGroupsModule } from './student_groups/student_groups.module';
 import { GroupsModule } from './groups/groups.module';
 import { AttendancesModule } from './attendances/attendances.module';
 import { SchedulesModule } from './schedules/schedules.module';
+import { HomeworksModule } from './homeworks/homeworks.module';
+import { GradesModule } from './grades/grades.module';
+import { HomeworkSubmissionsModule } from './homework_submissions/homework_submissions.module';
+import { MediaModule } from './media/media.module';
 @Module({
 	imports: [
 		ConfigModule.forRoot({ envFilePath: ".env", isGlobal: true }),
@@ -44,6 +48,10 @@ import { SchedulesModule } from './schedules/schedules.module';
 		GroupsModule,
 		AttendancesModule,
 		SchedulesModule,
+		HomeworksModule,
+		GradesModule,
+		HomeworkSubmissionsModule,
+		MediaModule,
 	],
 	controllers: [],
 	providers: [],
