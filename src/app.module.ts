@@ -8,6 +8,11 @@ import { TeachersModule } from './teachers/teachers.module';
 import { StudentsModule } from './students/students.module';
 import { AuthStudentsModule } from './auth_students/auth_students.module';
 import { CoursesModule } from './courses/courses.module';
+import { TeacherGroupsModule } from './teacher_groups/teacher_groups.module';
+import { StudentGroupsModule } from './student_groups/student_groups.module';
+import { GroupsModule } from './groups/groups.module';
+import { AttendancesModule } from './attendances/attendances.module';
+import { SchedulesModule } from './schedules/schedules.module';
 @Module({
 	imports: [
 		ConfigModule.forRoot({ envFilePath: ".env", isGlobal: true }),
@@ -34,6 +39,11 @@ import { CoursesModule } from './courses/courses.module';
 		StudentsModule,
 		AuthStudentsModule,
 		CoursesModule,
+		TeacherGroupsModule,
+		StudentGroupsModule,
+		GroupsModule,
+		AttendancesModule,
+		SchedulesModule,
 	],
 	controllers: [],
 	providers: [],
