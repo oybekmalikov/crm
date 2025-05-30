@@ -5,6 +5,9 @@ import { AdminsModule } from "./admins/admins.module";
 import { AuthAdminsModule } from "./auth_admins/auth_admins.module";
 import { AuthTeachersModule } from './auth_teachers/auth_teachers.module';
 import { TeachersModule } from './teachers/teachers.module';
+import { StudentsModule } from './students/students.module';
+import { AuthStudentsModule } from './auth_students/auth_students.module';
+import { CoursesModule } from './courses/courses.module';
 @Module({
 	imports: [
 		ConfigModule.forRoot({ envFilePath: ".env", isGlobal: true }),
@@ -28,6 +31,9 @@ import { TeachersModule } from './teachers/teachers.module';
 		AuthAdminsModule,
 		AuthTeachersModule,
 		TeachersModule,
+		StudentsModule,
+		AuthStudentsModule,
+		CoursesModule,
 	],
 	controllers: [],
 	providers: [],
